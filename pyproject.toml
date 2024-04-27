@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mastot"
+version = "0.1.0"
+description = ""
+authors = ["razimgit <rozikrazimator@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "mastot" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydub = "^0.25.1"
+vosk = "^0.3.45"
+
+[tool.poetry.scripts]
+mastot = "mastot.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
